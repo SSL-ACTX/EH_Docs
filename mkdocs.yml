@@ -1,0 +1,57 @@
+site_name: Ethical Hacking Guide (?) - Seuriin
+site_description: A simple guide to ethical hacking tools and techniques.
+site_author: Seuriin (SSL-ACTX)
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate  # DARK MODE
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Tools:
+      - Core Tools: core-tools.md
+      - SQL Injection Tools: sql-injection-tools.md
+      - Web Application Scanners: web-application-scanners.md
+      - Browser Developer Tools: browser-devtools.md
+  - Concepts:
+      - Important Concepts and Techniques: important-concepts.md
+  - Security:
+      - Anonymity and Privacy: anonymity-privacy.md
+      - Ethical Considerations: ethical-considerations.md
+  - Resources:
+      - Further Learning Resources: further-learning.md
+  - Analysis:
+      - API Analysis: api-analysis.md
+      - API Analysis Example (Anilist): api-analysis-anilist.md
+      - PNM Portal API Analysis: pnm-analysis.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
